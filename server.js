@@ -9,7 +9,7 @@ const server = express();
 //middleware
 server.use(express.json());
 
-server.use('./api/post', postsRouter); // this only runs if the url has /api/post in it
+server.use('/api/posts', postsRouter); // this only runs if the url has /api/posts in it
 
 
 server.get('/', async (req, res) => {
